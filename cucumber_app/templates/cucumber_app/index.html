@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>植物AI未来研究所</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <link rel="shortcut icon" href="../../static/index/images/logo-light.ico">
+    </head>
+    
+    <body class="container">
+        <header>
+            <h1>
+              <a href="">
+                <h1 class="plant_ai_future_lab">植物AI未来研究所</h1>
+              </a>
+            </h1>
+        </header>
+        <h2 class="text-center system">植物病害自動診断システム</h2>
+        <div class="text-center mb-5 plant_model">
+            <h2 class="pt-2">キュウリ</h2>
+            <a class="select_button" href="{% url 'cucumber_app:upload' %}">識別</a>
+        </div>
+        <footer>
+            <address> © 2022-2023 KOHEI.</address>
+        </footer>
+    </body>
+</html>
